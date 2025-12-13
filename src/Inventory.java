@@ -4,11 +4,23 @@ public class Inventory {
 
     public Inventory(int gold) {
         this.gold = gold;
-        this.items = new ConsumableItem[10];
+        this.items = new ConsumableItem[5];
     }
 
     public void addGold(int amount) {
         this.gold += amount;
+    }
+
+    // [null, null, null]
+    public void addConsumableItem(ConsumableItem item) {
+        for (int i = 0; i < items.length; i++) {
+            if (items[i] == null) {
+                items[i] = item;
+                System.out.println("В рюкзак добавлен предмет: " + item.getTitle());
+                return;
+            }
+            System.out.println("В рюкзаке нет места для: " + item.getTitle());
+        }
     }
 
     public void info() {
