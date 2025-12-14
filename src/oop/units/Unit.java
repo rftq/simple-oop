@@ -2,7 +2,7 @@ package oop.units;
 
 import oop.Weapon;
 
-public class Unit {
+public abstract class Unit {
     int level;
     String name;
     int hp;
