@@ -1,3 +1,5 @@
+package oop;
+
 public class Weapon {
     private String title;
     private int damage;

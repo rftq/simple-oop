@@ -1,3 +1,5 @@
+package oop;
+
 public class ConsumableItem {
     private String title;
     private int power;
